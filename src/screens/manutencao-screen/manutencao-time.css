@@ -1,0 +1,22 @@
+.imgTimes {
+    width: 100px;
+    position: relative;
+    top: 10px;
+}
+
+.tabela {
+    display: block;
+    word-wrap: wrap;
+    font-size: large; 
+    border-collapse: collapse;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 1px;
+    width: auto;
+    text-align: center;
+    
+}
+
+.tabelatimes {
+    position: relative;
+}

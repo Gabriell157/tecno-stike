@@ -1,0 +1,11 @@
+.cabecalho {
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.botaoperfil {
+    display: block;
+    text-align: right;
+    position: relative;
+}

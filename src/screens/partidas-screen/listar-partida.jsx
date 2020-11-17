@@ -15,13 +15,19 @@ export function ListarPartidas() {
 
 
     return <div>
-        <h1>Listar Partidas</h1>
+        <h1>Partidas</h1>
         {partidas.map(
-            (partida) => (<Partida datetime={partida.datetime} teamA={partida.teamA} teamB={partida.teamB} />)
+            (partida) => (<Partida result={partida.result} datetime={partida.datetime} teamA={partida.teamA} teamB={partida.teamB} status={partida.status} />)
         )}
 
         <Link to="/manutencaopartida">
-            <button type="button">Crie Partidas</button>
+            <button type="button">Manutenção Partidas</button>
+        </Link>
+        <Link to="/atualizarpartida">
+            <button type="button">Atualizar Partidas</button>
+        </Link>
+        <Link to="/partidasrecentes">
+            <button type="button">Partidas Recentes</button>
         </Link>
     </div>
 }

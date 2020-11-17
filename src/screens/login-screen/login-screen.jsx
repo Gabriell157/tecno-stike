@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useHistory } from 'react-router-dom'
+import { useHistory, Link} from 'react-router-dom'
 import { Texto } from '../../componentes/texto-componentes/texto.componentes'
 import { login } from '../../services'
 
@@ -11,7 +11,7 @@ export function Login() {
   async function botaoLogin(evento) {
     evento.preventDefault()
     await login(usuario)
-    history.push('/paginainicial')
+    history.push('/paginaprincipal')
   }
 
   function handleChange(evento) {
@@ -27,6 +27,10 @@ export function Login() {
       <Texto nome="password" tipo="password" minhaFuncao={handleChange} linha="Senha" />
 
       <button onClick={botaoLogin}>Login</button>
+
+      <Link to="/cadastro">
+            <button type="button"> Cadastre-se </button>
+        </Link>
     </form>
 
   </div>

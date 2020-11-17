@@ -17,7 +17,7 @@ export function Cadastro() {
   async function botaoCadastro(evento) {
     evento.preventDefault()
     await cadastro(usuario)
-    history.push('/login')
+    history.push('/paginainicial')
   }
 
   return <div>

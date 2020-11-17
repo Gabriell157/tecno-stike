@@ -2,7 +2,7 @@
 
 
 
-export function CriarPartida ({ datetime, idTeamA, idTeamB }) 
+export function CriarPartida ({ datetime, idTeamA, idTeamB,}) 
 
 
 return <div>
