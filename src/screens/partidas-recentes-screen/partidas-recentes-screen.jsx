@@ -17,7 +17,7 @@ export function PartidasRecentes() {
 
 
     return <div>
-        <h1>Partidas Anteriores</h1>
+        <h1>Partidas Recentes</h1>
 
         {partidas.map(
             (partidas) => (<PartidasLRecentes teamA={partidas.teamA} teamB={partidas.teamB} datetime={partidas.datetime} status={partidas.status} />)

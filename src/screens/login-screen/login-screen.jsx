@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useHistory, Link} from 'react-router-dom'
 import { Texto } from '../../componentes/texto-componentes/texto.componentes'
 import { login } from '../../services'
+import '../login-screen/login.css'
 
 export function Login() {
 
@@ -20,11 +21,11 @@ export function Login() {
     setUsuario(copia)
   }
 
-  return <div>
+  return <div className='botaologin'>
     <form>
 
-      <Texto nome="username" tipo="text" minhaFuncao={handleChange} linha="Email" />
-      <Texto nome="password" tipo="password" minhaFuncao={handleChange} linha="Senha" />
+      <Texto nome="username" tipo="text" minhaFuncao={handleChange} placeholder='Email' />
+      <Texto nome="password" tipo="password" minhaFuncao={handleChange} placeholder='Senha' />
 
       <button onClick={botaoLogin}>Login</button>
 

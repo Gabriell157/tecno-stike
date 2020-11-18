@@ -2,6 +2,7 @@ import { listarPartidas } from "../../services/partidas-service/listar-partida.s
 import { useState, useEffect } from 'react'
 import { Partida } from "../../componentes/partida-componente/partida.componente"
 import { Link } from "react-router-dom"
+import "./listar.css"
 
 export function ListarPartidas() {
 
@@ -20,14 +21,16 @@ export function ListarPartidas() {
             (partida) => (<Partida result={partida.result} datetime={partida.datetime} teamA={partida.teamA} teamB={partida.teamB} status={partida.status} />)
         )}
 
-        <Link to="/manutencaopartida">
-            <button type="button">Manutenção Partidas</button>
-        </Link>
-        <Link to="/atualizarpartida">
-            <button type="button">Atualizar Partidas</button>
-        </Link>
-        <Link to="/partidasrecentes">
-            <button type="button">Partidas Recentes</button>
-        </Link>
+        <div className='botoes'>
+            <Link to="/manutencaopartida">
+                <button type="button">Manutenção Partidas</button>
+            </Link>
+            <Link to="/atualizarpartida">
+                <button type="button">Atualizar Partidas</button>
+            </Link>
+            <Link to="/partidasrecentes">
+                <button type="button">Partidas Recentes</button>
+            </Link>
+        </div>
     </div>
 }

@@ -2,10 +2,13 @@
     display: block;
     text-align: center;
     position: relative;
+    padding: 15px;
 }
 
 .botaoperfil {
     display: block;
-    text-align: right;
+    justify-content: space-around;
     position: relative;
+    align-items: baseline;
+
 }

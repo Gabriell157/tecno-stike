@@ -1,0 +1,29 @@
+.partida {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    padding: 5px;
+    border: solid 2px rgb(255, 255, 255);
+    background-origin: padding-box;       
+}
+
+.imagenspartidas {
+    width: 200px;
+}
+
+.infodostimes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    border: solid 2px rgb(255, 255, 255);  
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+
+    

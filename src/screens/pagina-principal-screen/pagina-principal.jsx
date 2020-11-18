@@ -8,16 +8,18 @@ import '../pagina-principal-screen/pagina-principal.css'
 
 
 export function PaginaPrincipal () {
-    return <div >
-        <img width="1350" height="400" src={Banner} alt="Banner" />
-        <img className="imagensRedondinhas" src={Foto1} alt="fotinho" />
-        <img className="imagensRedondinhas2" src={Foto2} alt="fotinho" />
-        <img className="imagensRedondinhas3"src={Foto3} alt="fotinho" />
-        <div>
+    return <div>
+        <div className='imagensRedondinhas'>
+        <img src={Banner} alt="Banner" />
+        <img src={Foto1} alt="fotinho" />
+        <img src={Foto2} alt="fotinho" />
+        <img src={Foto3} alt="fotinho" />
+        </div>
+        
+        <div className='video'>
         <iframe title="Video BackGround" width="1350" height="600" src="https://www.youtube.com/embed/S4o-wwXWzYo?start=23&autoplay=1" ></iframe>
         </div>
         < ManutencaoTime />
         < ListarPartidas />
-
     </div>
 }

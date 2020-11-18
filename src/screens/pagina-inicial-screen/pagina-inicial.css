@@ -1,35 +1,7 @@
-.imagensRedondinhas {
-    word-wrap: break-word;
-    position: absolute;
-    right: 25px;
-    width: 150px;
-    bottom: 250px;
-    left: 100px;
-    display: block;
-    text-align: center;
-    padding: 30px;
-}
-
-.imagensRedondinhas2 {
-    word-wrap: break-word;
-    position: absolute;
-    right: 25px;
-    width: 150px;
-    bottom: 250px;
-    left: 600px;
-    display: block;
-    text-align: center;
-    padding: 30px;
-}
-
-.imagensRedondinhas3 {
-    word-wrap: break-word;
-    position: absolute;
-    right: 25px;
-    width: 150px;
-    bottom: 250px;
-    left: 1100px;
-    display: block;
-    text-align: center;
-    padding: 30px;
+.telalogin {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+    
 }

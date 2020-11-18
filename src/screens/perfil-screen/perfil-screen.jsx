@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import { perfil } from '../../services'
+import '../perfil-screen/perfil.css'
+
 
 export function Perfil() {
 
@@ -11,18 +13,24 @@ export function Perfil() {
 
   return <div>
     {user ? (
-      <div>
+      <div className='perfil' >
         <img src={user.photo} alt="Foto Perfil" />
         <h1>{user.name}</h1>
-        <span>{user.email}</span>
         <div>
-        <span>{user.phone}</span>
+        <span>Email: {user.email}</span>
         </div>
-        <p>{user.description}</p>
+        <div>
+          <span>Telefone: {user.phone}</span>
+        </div>
+        <span>Descrição: {user.description}</span>
       </div>
     ) : (
         <p>Carregando...</p>
       )}
+
+
+
+
   </div>
 }
 
