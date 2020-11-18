@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useHistory, useParams, Link } from 'react-router-dom'
 import { Texto } from '../../componentes/texto-componentes/texto.componentes'
 import { atualizarPartida } from '../../services'
+import './atualizarpartida.css'
 
 export function ManuAtualizarPartida() {
 
@@ -21,7 +22,7 @@ export function ManuAtualizarPartida() {
         history.push('/paginaprincipal')
     }
 
-    return <div>
+    return <div className='atualizarpartida'>
 
 
         <Texto nome="scoreTeamA" tipo="text" minhaFuncao={handleChange} linha="Placar Time A" />

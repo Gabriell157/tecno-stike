@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Texto } from '../../componentes/texto-componentes/texto.componentes'
 import { cadastroTime } from '../../services'
 import { useHistory, Link } from 'react-router-dom'
+import './cadastrartime.css'
 
 export function CadastrarTime() {
 
@@ -21,7 +22,7 @@ export function CadastrarTime() {
         
       }
 
-    return <div>
+    return <div className='cadastrartime'>
 
         <Texto nome="name" tipo="text" minhaFuncao={handleChange} linha="Time" />
         <Texto nome="members" tipo="text" minhaFuncao={handleChange} linha="Membros" />
@@ -30,7 +31,7 @@ export function CadastrarTime() {
 
         <button onClick={botaoCadastroTime}>Cadastrar</button>
 
-        <Link to="/login">
+        <Link to="/paginainicial">
             <button type="button">Logar</button>
         </Link>
 

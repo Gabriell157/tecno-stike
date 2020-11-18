@@ -1,0 +1,11 @@
+.cadastro {
+    display: flex;
+    text-align: center;
+    position: relative;
+    justify-content: space-around;
+    padding: 100px;
+    -webkit-box-shadow: 10px 10px 10px 1px rgba(31, 29, 23, 1);
+    -moz-box-shadow: 10px 10px 10px 1px rgba(31, 29, 23, 1);
+    box-shadow: 10px 10px 10px 1px rgba(31, 29, 23, 1);
+    background-color: #a36e0c;
+}

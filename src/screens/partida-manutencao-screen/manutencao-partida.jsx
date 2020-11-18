@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useHistory, Link } from 'react-router-dom'
 import { Texto } from '../../componentes/texto-componentes/texto.componentes'
 import { criarPartida } from '../../services'
+import './criarpartida.css'
 
 export function ManuPartida () {
 
@@ -21,11 +22,11 @@ export function ManuPartida () {
         history.push('/paginaprincipal')    
       }
     
-    return <div>
+    return <div className='criarpartida'>
         
         <Texto nome="idTeamA" tipo="text" minhaFuncao={handleChange} linha="Time A" />
         <Texto nome="idTeamB" tipo="text" minhaFuncao={handleChange} linha="Time B" />
-        <Texto nome="datetime" tipo="text" minhaFuncao={handleChange} linha="Hora Partida" />
+        <Texto nome="datetime" tipo="datetime-local" minhaFuncao={handleChange} linha="Hora Partida" />
 
         <button onClick={botaoCriarPartida}>Criar Partida</button>
 

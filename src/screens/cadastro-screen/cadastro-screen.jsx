@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { Texto } from '../../componentes/texto-componentes/texto.componentes'
 import { cadastro } from '../../services'
+import './cadastro.css'
 
 export function Cadastro() {
 
@@ -20,7 +21,7 @@ export function Cadastro() {
     history.push('/paginainicial')
   }
 
-  return <div>
+  return <div className='cadastro'>
     <form>
       <Texto nome="name" tipo="text" minhaFuncao={handleChange} linha="Nome" />
       <Texto nome="email" tipo="text" minhaFuncao={handleChange} linha="Email" />

@@ -6,9 +6,8 @@
 }
 
 .botaoperfil {
-    display: block;
-    justify-content: space-around;
-    position: relative;
-    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }

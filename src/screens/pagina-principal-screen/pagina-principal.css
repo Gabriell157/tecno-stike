@@ -1,9 +1,16 @@
 .imagensRedondinhas {
     display: flex;
-    position: relative;
     align-items: center;
     justify-content: space-around;
-    
+    background-image: url("../../componentes/banner/banner.png");
+    height: 500px;
+    width: 100%;
+    background-size: cover;   
+}
+
+.imagensRedondinhas img {
+    width: 150px;
+    height: 150px;
 }
 
 .video {

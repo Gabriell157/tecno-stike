@@ -25,7 +25,7 @@ export function Perfil() {
         <span>Descrição: {user.description}</span>
       </div>
     ) : (
-        <p>Carregando...</p>
+        <h1>Faça o Login</h1>
       )}
 
 
